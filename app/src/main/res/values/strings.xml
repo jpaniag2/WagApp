@@ -1,14 +1,19 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">WagApp</string>
     <string name="wag_logo">wag_logo</string>
-    <string name="username">Username</string>
-    <string name="password">Password</string>
+    <string name="username" tools:ignore="DuplicateDefinition">Username</string>
+    <string name="password" tools:ignore="DuplicateDefinition">Password</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="login">Login</string>
     <string name="new_user_register">New User? Register</string>
     <string name="register">Register</string>
     <string name="defaultprofileicon">Default profile icon</string>
     <string name="welcome">Welcome</string>
+    <string name="welcome_user">welcome_user</string>
+    <string name="already_have_an_account_sign_in">Already have an account? Sign In</string>
+    <string name="name">Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="confirm_password">Confirm Password</string>
 
 
 </resources>
