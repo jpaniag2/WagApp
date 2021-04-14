@@ -11,7 +11,7 @@ class Login : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         loginButton.setOnClickListener {
-            val intent = Intent(this, SignUpPage::class.java)
+            val intent = Intent(this, UserHomeProfile::class.java)
                 startActivity(intent)
 
         registerButton.setOnClickListener {
