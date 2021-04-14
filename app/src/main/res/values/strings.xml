@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WagApp</string>
+    <string name="wag_logo">wag_logo</string>
 </resources>
