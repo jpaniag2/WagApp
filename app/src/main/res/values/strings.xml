@@ -6,5 +6,9 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="login">Login</string>
     <string name="new_user_register">New User? Register</string>
-    <string name="defaultprofileicon">defaultprofileicon</string>
+    <string name="register">Register</string>
+    <string name="defaultprofileicon">Default profile icon</string>
+    <string name="welcome">Welcome</string>
+
+
 </resources>
