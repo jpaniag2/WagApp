@@ -14,12 +14,13 @@ class SignUpPage : AppCompatActivity() {
         registerUserButton.setOnClickListener {
             val intent = Intent(this, UserHomeProfile::class.java)
                 startActivity(intent)
+          }
 
         userHasAccount.setOnClickListener {
             val intentLogin = Intent(this, Login::class.java)
                 startActivity(intentLogin)
-            }
-          }
         }
 
     }
+
+}

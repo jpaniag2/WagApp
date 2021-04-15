@@ -13,12 +13,11 @@ class Login : AppCompatActivity() {
         loginButton.setOnClickListener {
             val intent = Intent(this, UserHomeProfile::class.java)
                 startActivity(intent)
+        }
 
         registerButton.setOnClickListener {
             val intentSignUp = Intent(this, SignUpPage::class.java)
                 startActivity(intentSignUp)
-            }
-
         }
 
     }
