@@ -3,6 +3,7 @@ package com.group11.wagapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Patterns
 import kotlinx.android.synthetic.main.activity_sign_up_page.*
 
 class SignUpPage : AppCompatActivity() {
@@ -18,8 +19,7 @@ class SignUpPage : AppCompatActivity() {
             val intentLogin = Intent(this, Login::class.java)
                 startActivity(intentLogin)
             }
-
+          }
         }
-    }
 
-}
+    }
