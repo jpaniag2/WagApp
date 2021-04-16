@@ -20,6 +20,7 @@
         <activity android:name=".UserHomeProfile"/>
         <activity android:name=".FormCollection"/>
         <activity android:name=".AnimalShelterGeoservice"/>
+        <activity android:name=".PetStoreGeoservice"/>
         <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
