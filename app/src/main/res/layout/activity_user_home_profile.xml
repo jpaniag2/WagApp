@@ -116,18 +116,15 @@
                 </ImageView>
 
 
-                <Button
-                    android:id="@+id/testButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Button" />
 
             </TableRow>
 
             <CalendarView
                 android:id="@+id/calendarView"
                 android:layout_width="wrap_content"
-                android:layout_height="360dp"></CalendarView>
+                android:layout_height="360dp">
+
+            </CalendarView>
 
         </TableLayout>
 
@@ -135,15 +132,15 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="114dp"
-        android:layout_height="36dp"
+        android:id="@+id/findShelterButton"
+        android:layout_width="153dp"
+        android:layout_height="37dp"
         android:layout_marginStart="149dp"
         android:layout_marginLeft="149dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="7dp"
-        android:text="Settings"
+        android:text="Find Shelter"
         app:backgroundTint="#837E7E"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
