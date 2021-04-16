@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".UserHomeProfile">
 
     <ImageView
@@ -11,56 +12,109 @@
         android:layout_width="415dp"
         android:layout_height="172dp"
         android:layout_marginBottom="559dp"
-        android:contentDescription="@string/defaultprofileicon"
+        android:contentDescription="@string/wag_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/petdefaulticon" />
+        app:srcCompat="@drawable/wag_logo" />
+
 
     <TextView
         android:id="@+id/welcomeUserTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/bubblegum_sans"
-        android:text="Welcome, User"
-        android:textSize="18sp"
+        android:fontFamily="cursive"
+        android:text="Welcome..."
+        android:textColor="#3A3A3A"
+        android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        tools:text="Welcome, User" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Welcome..." />
 
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="412dp"
         android:layout_height="516dp"
+        android:background="#D7DFD5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent">
+
 
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="40dp">
-            <TableRow>
+            android:layout_margin="40dp"
+            android:background="#F2F3F3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="My Pets"
+                android:textColor="@color/black"
+                android:textSize="36sp"
+                tools:text="My Pets">
+
+            </TextView>
+
+            <TableRow
+                android:background="#D7DFD5"
+                android:layout_margin="5dp">
+
                 <ImageView
                     android:id="@+id/petImage"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_gravity=""
-                    android:contentDescription="pet image">
+                    android:layout_width="350dp"
+                    android:layout_height="130dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="fill"
+                    android:contentDescription="pet image"
+                    app:srcCompat="@drawable/germanshepherd">
 
                 </ImageView>
 
-                <TextView
-                    android:layout_gravity=""
-                    android:id="@+id/petInformation"
-                    >
 
-                </TextView>
+            </TableRow>
+            <TableRow
+                android:background="#D7DFD5"
+                android:layout_margin="5dp">
+
+                <ImageView
+
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="fill"
+                    android:contentDescription="pet image"
+                    app:srcCompat="@drawable/parrotpet">
+
+                </ImageView>
+
+
+            </TableRow>
+            <TableRow
+                android:background="#D7DFD5"
+                android:layout_margin="5dp">
+
+                <ImageView
+
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="fill"
+                    android:contentDescription="pet image"
+                    app:srcCompat="@drawable/greycat">
+
+                </ImageView>
+
 
                 <Button
                     android:id="@+id/testButton"
@@ -70,9 +124,32 @@
 
             </TableRow>
 
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="wrap_content"
+                android:layout_height="360dp"></CalendarView>
 
         </TableLayout>
 
+
     </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="114dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginLeft="149dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="7dp"
+        android:text="Settings"
+        app:backgroundTint="#837E7E"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toEndOf="@+id/welcomeUserTxt"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
