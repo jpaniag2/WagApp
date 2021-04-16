@@ -13,7 +13,7 @@ class UserHomeProfile : AppCompatActivity() {
         setContentView(R.layout.activity_user_home_profile)
 
 
-        testButton.setOnClickListener {
+        findShelterButton.setOnClickListener {
             val intentTest = Intent(this, AnimalShelterGeoservice::class.java)
             startActivity(intentTest)
         }
