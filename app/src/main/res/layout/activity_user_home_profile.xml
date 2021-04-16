@@ -116,11 +116,6 @@
                 </ImageView>
 
 
-                <Button
-                    android:id="@+id/testButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Button" />
 
             </TableRow>
 
@@ -128,7 +123,7 @@
                 android:id="@+id/calendarView"
                 android:layout_width="wrap_content"
                 android:layout_height="360dp">
-                
+
             </CalendarView>
 
         </TableLayout>
