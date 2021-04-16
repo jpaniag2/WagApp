@@ -11,9 +11,5 @@ class UserHomeProfile : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_home_profile)
 
-        button.setOnClickListener {
-            val internetFormatForm = Intent(this, FormCollection::class.java)
-            startActivity(internetFormatForm)
-        }
     }
 }

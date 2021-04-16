@@ -12,7 +12,7 @@ class SignUpPage : AppCompatActivity() {
         setContentView(R.layout.activity_sign_up_page)
 
         registerUserButton.setOnClickListener {
-            val intent = Intent(this, UserHomeProfile::class.java)
+            val intent = Intent(this, FormCollection::class.java)
                 startActivity(intent)
           }
 
