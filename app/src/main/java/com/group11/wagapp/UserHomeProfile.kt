@@ -17,5 +17,10 @@ class UserHomeProfile : AppCompatActivity() {
             val intentTest = Intent(this, AnimalShelterGeoservice::class.java)
             startActivity(intentTest)
         }
+
+        addNewPetProfile.setOnClickListener {
+            val intentTest = Intent(this, NewPetProfile::class.java)
+            startActivity(intentTest)
+        }
     }
 }

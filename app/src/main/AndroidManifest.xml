@@ -2,25 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.group11.wagapp">
 
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
-        android:fullBackupContent="true"
         android:allowBackup="true"
+        android:fullBackupContent="true"
         android:icon="@mipmap/launcher_icon"
         android:label=""
         android:roundIcon="@mipmap/launcher_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WagApp">
-
-
-        <activity android:name=".SignUpPage"/>
-        <activity android:name=".UserHomeProfile"/>
-        <activity android:name=".FormCollection"/>
-        <activity android:name=".AnimalShelterGeoservice"/>
-        <activity android:name=".PetStoreGeoservice"/>
+        <activity android:name=".NewPetProfile"></activity>
+        <activity android:name=".SignUpPage" />
+        <activity android:name=".UserHomeProfile" />
+        <activity android:name=".FormCollection" />
+        <activity android:name=".AnimalShelterGeoservice" />
+        <activity android:name=".PetStoreGeoservice" />
         <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,4 +28,9 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
 </manifest>
